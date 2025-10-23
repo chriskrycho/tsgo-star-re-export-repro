@@ -1,0 +1,9 @@
+{
+  "name": "@repro/destination",
+  "dependencies": {
+    "@repro/origin": "workspace:*"
+  },
+  "devDependencies": {
+    "@typescript/native-preview": "^7.0.0-dev.20251023.1"
+  }
+}

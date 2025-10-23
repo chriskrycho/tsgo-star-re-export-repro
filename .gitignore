@@ -1,0 +1,5 @@
+node_modules
+.codanna
+.fastembed_cache
+packages/**/dist
+.zed

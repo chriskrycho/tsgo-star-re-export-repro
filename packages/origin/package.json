@@ -1,0 +1,20 @@
+{
+  "name": "@repro/origin",
+  "exports": {
+    "./test": {
+      "types": "./dist/testing/index.d.ts",
+      "node": "./dist/testing/index.js",
+      "default": "./src/testing/index.ts"
+    }
+  },
+  "imports": {
+    "#origin/*.ts": {
+      "types": "./src/*.ts",
+      "default": "./src/*.ts"
+    }
+  },
+  "devDependencies": {
+    "@types/node": "^24.9.1",
+    "@typescript/native-preview": "^7.0.0-dev.20251023.1"
+  }
+}

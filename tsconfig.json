@@ -1,0 +1,47 @@
+{
+  "compilerOptions": {
+    // Module resolution options
+    "module": "node16",
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    // Typechecking options
+    "exactOptionalPropertyTypes": true,
+    "strict": true,
+    "noImplicitReturns": true,
+    "noImplicitOverride": true,
+    "noUncheckedIndexedAccess": true,
+    "noUnusedLocals": true, // It can be nice to turn this off when developing/debugging.
+    "noFallthroughCasesInSwitch": true,
+    "allowUnreachableCode": false,
+    "useUnknownInCatchVariables": true,
+    "target": "es2023",
+    "lib": [
+      "es2023",
+      "ESNext.Collection",
+      "ESNext.Iterator"
+    ],
+    "types": [
+      "node",
+      "mocha"
+    ],
+    "experimentalDecorators": true, // needed for mikro-orm
+    // Performance-related options
+    "skipLibCheck": true,
+    "preserveConstEnums": true,
+    "incremental": true,
+    "composite": true,
+    // Output options
+    "pretty": true,
+    "preserveWatchOutput": true,
+    "noErrorTruncation": false // change to true if you want to see the whole error
+  },
+  "references": [
+    {
+      "path": "packages/destination/tsconfig.json"
+    },
+    {
+      "path": "packages/origin/tsconfig.json"
+    }
+  ],
+  "include": []
+}

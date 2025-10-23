@@ -1,0 +1,15 @@
+{
+  "preview": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "@typescript/native-preview": "^7.0.0-dev.20251023.1",
+    "prettier": "^3.6.2"
+  },
+  "prettier": {},
+  "scripts": {
+    "build": "tsgo --build",
+    "clean": "rm -rf ./**/tsconfig.tsbuildinfo ./**/dist"
+  }
+}
